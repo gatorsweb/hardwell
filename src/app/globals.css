@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+@layer base {
+    body {
+        @apply text-secondary font-[400] font-epilogue;
+    }
+    h1{
+        @apply md:text-[56px] text-[40px] font-[700] md:leading-[64px] leading-[50px] text-secondary;
+    }
+    h2{
+        @apply md:text-[40px] text-[30px] font-[700] leading-[64px] text-[#2E2E46];
+    }
+    h3 {
+        @apply text-[22px] leading-[32px] font-[700] text-secondary mt-3
+    }
+    p {
+        @apply text-[#29292980] text-[16px] font-[400] leading-[32px]
+    }
+    .subheading{
+        @apply text-[20px] font-[500] text-[#333]
+    }
+    .section__heading {
+        @apply text-center mb-[69px]
+    }
+    .section__margin{
+        @apply my-[125px]
+    }
+    .analyze-list li {
+        @apply before:list-none before:content-[""] before:block before:w-6 before:h-6 before:bg-[url("/check.png")] before:bg-no-repeat before:mr-2 flex mb-[16px]
+    }
+}
+
